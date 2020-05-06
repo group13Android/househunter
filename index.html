@@ -3,30 +3,101 @@
 <head>
 <STYLE TYPE = "text/css">
 <!--
-html{background-color:#fefefe}
-body{font-family:Open Sans,Arial;color:#454545;font-size:16px;margin:2em auto;max-width:800px;padding:1em;line-height:1.4;text-align:justify}html.contrast 
-body{color:#050505}html.contrast blockquote{color:#11151a}html.contrast blockquote:before{color:#262626}html.contrast a{color:#0051c9}html.contrast a:visited{color:#7d013e}html.contrast span.wr{color:#800}html.contrast span.mfw{color:#4d0000}html.inverted{background-color:#010101}html.inverted body{color:#bababa}html.inverted div#invmode{color:#fff;background-color:#000}html.inverted blockquote{color:#dad0c7}html.inverted blockquote:before{color:#bfbfbf}html.inverted a{color:#07a}html.inverted a:visited{color:#ac5a82}html.inverted span.wr{color:#c0392b}html.inverted span.mfw{color:#8a0000}a{color:#07a}a:visited{color:#941352}.noselect{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}span.citneed{vertical-align:top;font-size:.7em;padding-left:.3em}small{font-size:.4em}p.st{margin-top:-1em}div.fancyPositioning div.picture-left{float:left;width:40%;overflow:hidden;margin-right:1em}div.fancyPositioning div.picture-left img{width:100%}div.fancyPositioning div.picture-left p.caption{font-size:.7em}div.fancyPositioning div.tleft{float:left;width:55%}div.fancyPositioning div.tleft p:first-child{margin-top:0}div.fancyPositioning:after{display:block;content:"";clear:both}ul li img{height:1em}blockquote{color:#456;margin-left:0;margin-top:2em;margin-bottom:2em}blockquote span{float:left;margin-left:1rem;padding-top:1rem}blockquote author{display:block;clear:both;font-size:.6em;margin-left:2.4rem;font-style:oblique}blockquote author:before{content:"- ";margin-right:1em}blockquote:before{font-family:Times New Roman,Times,Arial;color:#666;content:open-quote;font-size:2.2em;font-weight:600;float:left;margin-top:0;margin-right:.2rem;width:1.2rem}blockquote:after{content:"";display:block;clear:both}@media screen and (max-width:500px){body{text-align:left}div.fancyPositioning div.picture-left,div.fancyPositioning div.tleft{float:none;width:inherit}blockquote span{width:80%}blockquote author{padding-top:1em;width:80%;margin-left:15%}blockquote author:before{content:"";margin-right:inherit}}span.visited{color:#941352}span.visited-maroon{color:#85144b}span.wr{color:#c0392b;font-weight:600;text-decoration:underline}div#contrast{color:#000;top:10px}div#contrast,div#invmode{cursor:pointer;position:absolute;right:10px;font-size:.8em;text-decoration:underline;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}div#invmode{color:#fff;background-color:#000;top:34px;padding:2px 5px}span.sb{color:#00e}span.sb,span.sv{cursor:not-allowed}span.sv{color:#551a8b}span.foufoufou{color:#444;font-weight:700}span.foufoufou:before{content:"";display:inline-block;width:1em;height:1em;margin-left:.2em;margin-right:.2em;background-color:#444}span.foufivfoufivfoufiv{color:#454545;font-weight:700}span.foufivfoufivfoufiv:before{content:"";display:inline-block;width:1em;height:1em;margin-left:.2em;margin-right:.2em;background-color:#454545}span.mfw{color:#730000}a.kopimi,a.kopimi img.kopimi{display:block;margin-left:auto;margin-right:auto}a.kopimi img.kopimi{height:2em}p.fakepre{font-family:monospace;font-size:.9em}
-
-
-#toc_container {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid #aaa;
-    display: table;
-    font-size: 95%;
-    margin-bottom: 1em;
-    padding: 20px;
-    width: auto;
+html{
+    background-color:#fefefe
+}
+ body{
+    font-family:Open Sans,Arial;
+    color:#454545;
+    font-size:16px;
+    margin:2em auto;
+    max-width:800px;
+    padding:1em;
+    line-height:1.4;
+    text-align:justify
 }
 
-.toc_title {
-    font-weight: 700;
-    text-align: center;
+
+/*Introduction - text closer to heading*/
+p.st{margin-top:-1em}
+
+a{
+    color:#07a
+}
+a:visited{
+    color:#941352
 }
 
-#toc_container li, #toc_container ul, #toc_container ul li{
-    list-style: outside none none !important;
+
+
+
+div.fancyPositioning div.picture-left {
+    float:left;
+    width:40%;
+    overflow:hidden;
+    margin-right:1em
+}
+ div.fancyPositioning div.picture-left img {
+    width:100%
+}
+ div.fancyPositioning div.picture-left p.caption {
+    font-size:.7em
+}
+ div.fancyPositioning div.tleft {
+    float:left;
+    width:55%
+}
+div.fancyPositioning div.tleft p:first-child {
+    margin-top:0
+}
+div.fancyPositioning:after {
+    display:block;
+    content:"";
+    clear:both
+}
+ ul li img{
+    height:1em
 }
 
+ @media screen and (max-width:500px){
+    body{
+        text-align:left
+    }
+    div.fancyPositioning div.picture-left,div.fancyPositioning div.tleft{
+        float:none;
+        width:inherit
+    }
+}
+
+
+/*license section*/
+a.kopimi,a.kopimi img.kopimi{
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+}
+a.kopimi img.kopimi{
+    height:2em
+}
+
+
+/*Table of contents styling*/
+ #toc_container {
+     background: #f9f9f9 none repeat scroll 0 0;
+     border: 1px solid #aaa;
+     display: table;
+     font-size: 95%;
+     margin-bottom: 1em;
+     padding: 20px;
+     width: auto;
+}
+ .toc_title {
+     font-weight: 700;
+     text-align: center;
+}
+ #toc_container li, #toc_container ul, #toc_container ul li{
+     list-style: outside none none !important;
+}
 
 -->
 </STYLE> <!--Theres some unused styles in here   --- this is now a ready to use bestmotherfuckingwebsite-->
@@ -40,11 +111,8 @@ body{color:#050505}html.contrast blockquote{color:#11151a}html.contrast blockquo
      <h1>HouseHunter</h1>
         <p class="st">2 line intro text</p>
      
-	 <h2>Detailed Intro</h2>
-        <p>Very very detailed intro - few lines long</p>
-        
-		
-		
+
+        		
 	<div id="toc_container">
         <p class="toc_title">Contents</p>
         <ul class="toc_list">
@@ -57,14 +125,20 @@ body{color:#050505}html.contrast blockquote{color:#11151a}html.contrast blockquo
 		<li><a href="#Second_Point_Header">2 Second Point Header</a></li>
 		<li><a href="#Third_Point_Header">3 Third Point Header</a></li>
 		</ul>
-	</div>	
+	</div>
+
+	 <h2>Detailed Intro</h2>
+        <p>Very very detailed intro - few lines long</p>	
      
 	 <h2 id="First_Point_Header">Point 1</h2>
         <p>Let me describe the <i>real</i> perfect-ass website which still has the glory of the past motherfuckingwebsites</p>
      <ul>
-        <li>Shit doesn't weigh a ton (in fact it's just 34.97 KB when the 27.83KB cat picture below is removed)</li>
-        <li>The page weighs exactly 63.02kB, 93.7% less than the <a href="https://google.com/">Google home page</a></li>
-        <li>Fits on your iPhone 1st gen (although it doesn't work on your damn 16x32 Tamagotchi)</li>
+        <li>http://motherfuckingwebsite.com/ - OG </li>
+        <li>http://bettermotherfuckingwebsite.com/ - Some Major improvements</a></li>
+        <li>https://thebestmotherfucking.website/ - looks best but a lot of stuff</li>
+        <li>https://perfectmotherfuckingwebsite.com/ - looks best but a lot of stuff</li>
+        <li>https://thebestmotherfuckingwebsite.co/ - fancy goes against initial principles</li>
+        <li>https://programming-motherfucker.com - looks best but a lot of stuff</li>
      </ul>
 	 
  <h2 id="Second_Point_Header">Well guess what, motherfucker:</h2>
