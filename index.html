@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>House Hunter</title>
+    <title>Home - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
@@ -22,9 +22,9 @@
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#UserGuide">User Guide</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="userGuide.html">User Guide</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#api">API'S &amp;fRAMEWORK'S</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">API'S &amp;fRAMEWORK'S</a></li>
                 </ul>
             </div>
         </div>
@@ -54,7 +54,7 @@
         <div class="container">
             <div class="section-heading text-center">
                 <h2>Our App's Features</h2>
-                <p class="text-muted">Check out what you can do with House Hunter today!</p><a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="features.html" style="background-color: #cfcfcf;">Read More Here</a>
+                <p class="text-muted">Check out what you can do with House Hunter today!</p><a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="#download" style="background-color: #cfcfcf;">Read More Here</a>
                 <hr>
             </div>
             <div class="row">
@@ -93,8 +93,8 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="feature-item"><i class="icon-home text-primary"></i>
-                                    <h3>Add/Delete Listings</h3>
-                                    <p class="text-muted">Got an empty house/room? Add a listing with info at any time. Remove listings when they are no longer available.</p>
+                                    <h3>Add listings</h3>
+                                    <p class="text-muted">Got an empty house/room? Add a listing with info at any time.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -129,47 +129,45 @@
         </div>
         <div class="overlay"></div>
     </section>
-	<section id="api" class="api">
-		<div class="article-list">
-			<div class="container">
-				<div class="intro">
-					<h2 class="text-center">API's &amp; Framework's</h2>
-					<p class="text-center">Our Application uses various different frameworks and API's including:</p>
-				</div>
-				<div class="row articles">
-					<div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/mapsAPI.png" height="100" style="height: 68.875;"></a>
-						<h3 class="name">Google Maps API</h3>
-						<p class="description">We use the Google Maps API for displaying a Map object on one of our fragments.&nbsp; Here on this map we display markers of all the listings in our firestore, where users can click on these markers to bring them to the information
-							page about said listing.</p><a class="action" href="#"></a></div>
-					<div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/firestore.jpg" style="width: 225;" height="100"></a>
-						<h3 class="name">Firebase Firestore</h3>
-						<p class="description">We use Firebase Firestore as our primary cloud database for our project. We store information such as listing objects, Users and House images URI's and ID' here.</p><a class="action" href="#"></a></div>
-					<div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/authent.png" height="100"></a>
-						<h3 class="name">Firebase Authentication</h3>
-						<p class="description">We use Firebase Authentication for our sign-up and login functionality for our application. Users information from sign-up is stored in our Firestore and is retrieved when logging in.</p><a class="action" href="#"></a></div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="intro"></div>
-				<div class="row articles">
-					<div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/realtime.png" height="100"></a>
-						<h3 class="name">Firebase Real TIme Database</h3>
-						<p class="description">We use Firebase Real Time Database for the purpose of messaging within our application. We store our messages and related information such as who the messages are betweeen here, The benefits to using Firebase Real Time Database is
-							of course speed.</p><a class="action" href="#"></a></div>
-					<div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/cloudstorage.png" height="100"></a>
-						<h3 class="name">Firebase Cloud Storage</h3>
-						<p class="description">We use Firebase Cloud Storage for the storage of our images that users upload when adding a listing. Once images are uploaded to firebase cloud storage, we are able to retrieve them and display them in app using their associated URI's.</p>
-						<a
-							class="action" href="#"></a>
-					</div>
-					<div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/geocodeAPI.png" height="100"></a>
-						<h3 class="name">Google Geocoding API</h3>
-						<p class="description">We use the Google Geocoding API to get the longitude and latitudes of addressses entered when people are adding a new listing. These longitude and latitudes are then used to put markers on the map at their locations.</p><a class="action"
-							href="#"></a></div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="article-list">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">API's &amp; Framework's</h2>
+                <p class="text-center">Our Application uses various different frameworks and API's including:</p>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/mapsAPI.png" height="100" style="height: 68.875;"></a>
+                    <h3 class="name">Google Maps API</h3>
+                    <p class="description">We use the Google Maps API for displaying a Map object on one of our fragments.&nbsp; Here on this map we display markers of all the listings in our firestore, where users can click on these markers to bring them to the information
+                        page about said listing.</p><a class="action" href="#"></a></div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/firestore.jpg" style="width: 225;" height="100"></a>
+                    <h3 class="name">Firebase Firestore</h3>
+                    <p class="description">We use Firebase Firestore as our primary cloud database for our project. We store information such as listing objects, Users and House images URI's and ID' here.</p><a class="action" href="#"></a></div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/authent.png" height="100"></a>
+                    <h3 class="name">Firebase Authentication</h3>
+                    <p class="description">We use Firebase Authentication for our sign-up and login functionality for our application. Users information from sign-up is stored in our Firestore and is retrieved when logging in.</p><a class="action" href="#"></a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="intro"></div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/realtime.png" height="100"></a>
+                    <h3 class="name">Firebase Real TIme Database</h3>
+                    <p class="description">We use Firebase Real Time Database for the purpose of messaging within our application. We store our messages and related information such as who the messages are betweeen here, The benefits to using Firebase Real Time Database is
+                        of course speed.</p><a class="action" href="#"></a></div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/cloudstorage.png" height="100"></a>
+                    <h3 class="name">Firebase Cloud Storage</h3>
+                    <p class="description">We use Firebase Cloud Storage for the storage of our images that users upload when adding a listing. Once images are uploaded to firebase cloud storage, we are able to retrieve them and display them in app using their associated URI's.</p>
+                    <a
+                        class="action" href="#"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img src="assets/img/geocodeAPI.png" height="100"></a>
+                    <h3 class="name">Google Geocoding API</h3>
+                    <p class="description">We use the Google Geocoding API to get the longitude and latitudes of addressses entered when people are adding a new listing. These longitude and latitudes are then used to put markers on the map at their locations.</p><a class="action"
+                        href="#"></a></div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <p>©&nbsp;House Hunter 2020. All Rights Reserved.</p>
