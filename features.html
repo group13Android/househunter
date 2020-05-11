@@ -17,15 +17,21 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav-1">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 30;">House Hunter</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false"
+    <nav class="navbar navbar-light navbar-expand-lg" id="mainNav-1">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 30;">House
+                Hunter</a><button data-toggle="collapse" data-target="#navbarResponsive"
+                class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.html">Getting Started</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="userGuide.html">Navigation And Strcture</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="technicalDesign.html">Technical Design</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="features.html">Features</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="index.html">Getting Started</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="userGuide.html">Navigation And Structure</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="technicalDesign.html">Technical Design</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                            href="features.html">Features</a></li>
                 </ul>
             </div>
         </div>
@@ -35,31 +41,65 @@
             <div class="row">
                 <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2 text-center">
                     <div class="intro">
-                        <h1 class="text-center"></h1>
-                        <h1 class="text-center">House Hunter Features</h1><img class="img-fluid" src="assets/img/ic_launcher-playstore.png"></div>
-                    <div class="text">
-                        <p>Our application is built on top of many key features. House Hunters has not deviated from the original design document and deliveres on all deliverable features promised in the orginal design document. The features tat users can
+                        <h1 class="text-center"><b>House Hunter Features</b></House></h1><img class="img-fluid"
+                            src="assets/img/ic_launcher-playstore.png">
+                    </div>
+                    <div class="text" style="text-align: left; font-size: large;">
+                        <p style="font-size: large;">Our application is built on top of many key features. House Hunters has not deviated from the
+                            original design document and deliveres on all deliverable features promised in the orginal
+                            design document. The features tat users can
                             expect to see after downloading and using our application are as follows:</p>
                         <ul>
-                            <li>Register and Sign-in -&nbsp; Upon launching our application the user will be met by our animated splash screen where afterwards they have the capability to sign in or register a new account with house hunter. This features
-                                uses Firebase Authentication and stores the information about the user in our Firestore.</li>
-                            <li>Search, Filter and View Listings - Once logged in the user is free to do as they wish by navigating the app through our navbar. Our home screen contains a list of listings in which the user can click on to like that listing,
-                                contact the listing owner or view more information about the listing, such as images etc. For this we use a recycler view and custom adapter. The user also has the option to filter the listings on our home page by selecting
-                                one of various criteria such as price low to high etc. Through our navbar users can navigate to our search fragment in which they can search for listings based on name and other fields.</li>
-                            <li>View Map - Our app also contains a map fragment which uses the Google Maps API. This map fragment contains our custom markers for every listing registered through our app. The user can click on these markers to bring them to
-                                that specific listing in which they can contact the seller, like etc. The users current location is also marked on the map so that they can see how close the listings are in proximty to them.&nbsp; (Users must first agree
-                                to location permissions to use the map)</li>
-                            <li>Add Listings - Users have the capability to add listings which are viewable to all other users through the add listing tab on our home page. To add a listing all the user has to do is input certain information such as the address,
-                                number of rooms, price, description, start and end dates and optionally photos. The user can choose photos from their device our from their google drive etc to upload for a listing. Start and end dates use a calendar for
-                                input instead of a string. We use Googles Geocoding API here to get the longitude and latitude of the address entered so we can use them for later on our map fragment.</li>
-                            <li>Like Listings - On viewing a listing the user has the option to like a listing and if they already have a listing liked they can unlike it. The purpose of this is so that at a later stage they can view their liked listings
+                            <li><b>Register and Sign-in</b> -&nbsp; Upon launching our application the user will be met
+                                by our animated splash screen where afterwards they have the capability to sign in or
+                                register a new account with house hunter. This features
+                                uses Firebase Authentication and stores the information about the user in our Firestore.
+                            </li><br>
+                            <li><b>Search, Filter and View </b> - Once logged in the user is free to do as they wish by
+                                navigating the app through our navbar. Our home screen contains a list of listings in
+                                which the user can click on to like that listing,
+                                contact the listing owner or view more information about the listing, such as images
+                                etc. For this we use a recycler view and custom adapter. The user also has the option to
+                                filter the listings on our home page by selecting
+                                one of various criteria such as price low to high etc. Through our navbar users can
+                                navigate to our search fragment in which they can search for listings based on name and
+                                other fields.</li><br>
+                            <li><b>View Map</b> - Our app also contains a map fragment which uses the Google Maps API.
+                                This map fragment contains our custom markers for every listing registered through our
+                                app. The user can click on these markers to bring them to
+                                that specific listing in which they can contact the seller, like etc. The users current
+                                location is also marked on the map so that they can see how close the listings are in
+                                proximty to them.&nbsp; (Users must first agree
+                                to location permissions to use the map)</li><br>
+                            <li><b>Add Listings</b> - Users have the capability to add listings which are viewable to
+                                all other users through the add listing tab on our home page. To add a listing all the
+                                user has to do is input certain information such as the address,
+                                number of rooms, price, description, start and end dates and optionally photos. The user
+                                can choose photos from their device our from their google drive etc to upload for a
+                                listing. Start and end dates use a calendar for
+                                input instead of a string. We use Googles Geocoding API here to get the longitude and
+                                latitude of the address entered so we can use them for later on our map fragment.</li>
+                            <br>
+                            <li><b>Like Listings</b> - On viewing a listing the user has the option to like a listing
+                                and if they already have a listing liked they can unlike it. The purpose of this is so
+                                that at a later stage they can view their liked listings
                                 and view those.</li>
-                            <li>Contact Listing Owners - Our app contains a messaging system in which users can message Listing owners about their listing. For this we use Firebase Real Time Database to store things such as messages and who the messages are
-                                between. Our messaging system shows you information such as the users name and timestamps for their messages etc.</li>
-                            <li>View and Edit their Account Information - If a user wishes they can view their account information through the profile fragment. Here a user can do such things as view their personal information such as email, date joined and
-                                last login. They can also change their display name here. They can see their liked ads and listed ads as well, clicking into one of them will bring them to that listing. We also have diferent modes for our app including
-                                light and night mode. These can be activated by a swithc here.</li>
-                            <li>Logout - A simple log out button is available for the user in the profile page. This brings them back to the authentication page where they can log in again.</li>
+                            <br>
+                            <li><b>Contact Listing Owners</b> - Our app contains a messaging system in which users can
+                                message Listing owners about their listing. For this we use Firebase Real Time Database
+                                to store things such as messages and who the messages are
+                                between. Our messaging system shows you information such as the users name and
+                                timestamps for their messages etc.</li>
+                            <br>
+                            <li><b>View and Edit their Account Information</b> - If a user wishes they can view their
+                                account information through the profile fragment. Here a user can do such things as view
+                                their personal information such as email, date joined and
+                                last login. They can also change their display name here. They can see their liked ads
+                                and listed ads as well, clicking into one of them will bring them to that listing. We
+                                also have diferent modes for our app including
+                                light and night mode. These can be activated by a swithc here.</li><br>
+                            <li><b>Logout</b> - A simple log out button is available for the user in the profile page.
+                                This brings them back to the authentication page where they can log in again.</li>
                         </ul>
                     </div>
                 </div>
